@@ -1,6 +1,7 @@
 (function ($) {
 	"use strict";
 
+
 	jQuery('#datepicker').datepicker({
 		format: 'dd-mm-yyyy',
 		startDate: '+1d'
@@ -431,12 +432,6 @@ var swiper = new Swiper('.personal-center-banner', {
 		}
 	}
   });
-  
-
-// fancybox
-$("a.portfolio-img").fancybox();
-
-
 
   // -----------theme night and dark mood------------
 
