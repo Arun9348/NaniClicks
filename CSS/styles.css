@@ -1885,6 +1885,94 @@ header.style-1.header-transparent {
   padding: 90px 0;
   z-index: 9;
 }
+
+div.gallery {
+  columns: 3;
+  column-gap: 5px;
+}
+
+div.gallery > div {
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+div.gallery > div > a.zoomout {
+  display: none;
+}
+
+div.gallery > div > a,
+div.gallery > div > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure images are fly visible */
+}
+
+div.gallery > div > a.zoomin:hover::after,
+div.gallery > div > a.zoomin:focus::after {
+  content: '';
+  display: block;
+  background: rgba(255, 255, 255, 0.2) url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZmlsbD0ibm9uZSIgaGVpZ2h0PSIyNCIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PGxpbmUgeDE9IjIxIiB4Mj0iMTYuNjUiIHkxPSIyMSIgeTI9IjE2LjY1Ii8+PGxpbmUgeDE9IjExIiB4Mj0iMTEiIHkxPSI4IiB5Mj0iMTQiLz48bGluZSB4MT0iOCIgeDI9IjE0IiB5MT0iMTEiIHkyPSIxMSIvPjwvc3ZnPg==) no-repeat 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+div.gallery > div:focus-within,
+div.gallery > div:target {
+  overflow: visible;
+  z-index: 1;
+}
+
+/* Make sure tile of active image is on top */
+div.gallery > div:target {
+  z-index: 2;
+}
+
+/* Hide zoom in link when the tile is targetted */
+div.gallery > div:target > a.zoomin {
+  display: none;
+}
+
+/* Show zoom out (close) link when the tile is targetted */
+div.gallery > div:target > a.zoomout {
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 12;
+}
+
+/* Stretch out the image */
+div.gallery > div > a.zoomout > img {
+  object-fit: contain;
+  padding: 1vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Put close link on top */
+div.gallery > div:target > a.zoomout::after {
+  content: 'Click or hit ESC to close';
+  position: fixed;
+  right: 1vw;
+  bottom: 1vw;
+  font-size: 1rem;
+  color: #fff;
+  z-index: 12;
+}
+
 @media (max-width: 991px) {
   .services-area .tab-content {
     padding: 50px 0;
