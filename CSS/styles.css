@@ -1699,6 +1699,7 @@ header.style-1.header-transparent {
 .services-area {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .services-area .mb--40 {
   margin-bottom: 40px;
@@ -1738,7 +1739,7 @@ header.style-1.header-transparent {
 }
 .services-area .services-border::after {
   content: "";
-  border: 1px solid #FA6350;
+  /* border: 1px solid #FA6350; */
   border-left: none;
   width: 70%;
   height: 100%;
@@ -1752,27 +1753,19 @@ header.style-1.header-transparent {
     display: none;
   }
 }
-.services-area .services-content {
-  padding: 90px 0px 90px 150px;
-}
-@media (max-width: 1399px) {
-  .services-area .services-content {
-    padding: 90px 0px 90px 50px;
-  }
-}
 @media (max-width: 991px) {
   .services-area .services-content {
-    padding: 80px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
   }
 }
 .services-area .services-content .section-title1 {
-  max-width: 570px;
-  width: 100%;
+  max-width: 100%;
+  /* width: 100%; */
 }
 @media (max-width: 991px) {
   .services-area .services-content .section-title1 {
     text-align: center;
-    margin: 0 auto 50px;
+    margin: 0 auto 5vh;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1789,10 +1782,11 @@ header.style-1.header-transparent {
 .services-area .services-content .nav-pills .nav-item {
   margin-right: 120px;
   padding-top: 50px;
+  place-items: anchor-center;
 }
 @media (max-width: 1700px) {
   .services-area .services-content .nav-pills .nav-item {
-    margin-right: 60px;
+    margin-right: 0px;
   }
 }
 @media (max-width: 1199px) {
@@ -1802,7 +1796,7 @@ header.style-1.header-transparent {
 }
 @media (max-width: 991px) {
   .services-area .services-content .nav-pills .nav-item {
-    padding-top: 0;
+    padding-top: 5vh;
   }
 }
 @media (max-width: 767px) {
@@ -1867,10 +1861,12 @@ header.style-1.header-transparent {
 .services-area .services-content .nav-pills .nav-item:last-child {
   display: flex;
   align-items: center;
+  padding-bottom: 5vh;
 }
 @media (max-width: 576px) {
   .services-area .services-content .nav-pills .nav-item:last-child {
-    padding: 0px 50px;
+    /* padding: 0px 5px; */
+    place-content: center;
   }
 }
 .services-area .services-content .nav-pills .nav-link.active, .services-area .services-content .nav-pills .show > .nav-link {
