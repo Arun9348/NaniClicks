@@ -1232,13 +1232,13 @@ header.style-1.header-transparent {
     padding: 80px 0;
   }
 }
-.horo-style-1 .warter-mark {
+.horo-style-1 .water-mark {
   position: absolute;
   right: 20px;
   bottom: -13px;
   z-index: 2;
 }
-.horo-style-1 .warter-mark h2 {
+.horo-style-1 .water-mark h2 {
   font-size: 105px;
   opacity: 0.055;
   color: #fff;
@@ -1474,7 +1474,7 @@ header.style-1.header-transparent {
   position: relative;
   width: 100vw;
   height: auto;
-  padding: 180px 0 230px;
+  padding: 50px 0 220px;
   /* PAGINATION */
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1526,8 +1526,8 @@ header.style-1.header-transparent {
 .bk-slider .swiper-slide img {
   height: 380px;
   max-width: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: all 0.65s ease;
 }
 .bk-slider .swiper-slide.swiper-slide-active {
@@ -1542,8 +1542,8 @@ header.style-1.header-transparent {
 .bk-slider .swiper-slide.swiper-slide-active img {
   height: 350px;
   width: 100% !important;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: all 0.65s ease;
 }
 .bk-slider .swiper-pagination-bullet {
@@ -1862,6 +1862,7 @@ header.style-1.header-transparent {
   display: flex;
   align-items: center;
   padding-bottom: 5vh;
+  place-content: center;
 }
 @media (max-width: 576px) {
   .services-area .services-content .nav-pills .nav-item:last-child {
@@ -2240,6 +2241,98 @@ div.gallery > div:target > a.zoomout::after {
   width: 100%;
   height: 100%;
 }
+
+
+.video-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.preview-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.preview-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+
+.preview-item {
+  flex: 0 0 240px;
+  height: 135px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.preview-item.active {
+  border-color: #3498db;
+}
+
+.preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-item::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.preview-item:hover::after {
+  opacity: 1;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-left {
+  left: 0;
+}
+
+.scroll-right {
+  right: 0;
+}
+
+.video-container {
+  position: relative;
+  padding-top: 56.25%;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 /*=======================================
  9. Testimonial area
