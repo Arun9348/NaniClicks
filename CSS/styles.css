@@ -892,6 +892,17 @@ body:not(.is-mobile) .tt-style-switch:hover {
 /*=======================================
  4. Home One Header
 =======================================*/
+@media (max-width: 991px) {
+  .header-area {
+    position: fixed !important;
+  }
+}
+@media (min-width: 992px) {
+  .header-area {
+    position: absolute;
+  }
+}
+
 header.style-1 {
   width: 100%;
   z-index: 9999;
@@ -1255,6 +1266,7 @@ header.style-1.header-transparent {
   color: #fff;
   font-weight: 600;
   font-family: var(--font-josefin);
+  text-transform: capitalize;
 }
 .horo-style-1 .social-area {
   position: absolute;
@@ -1409,7 +1421,7 @@ header.style-1.header-transparent {
   position: relative;
   width: 100vw;
   height: auto;
-  padding: 50px 0 220px;
+  padding: 50px 0 40vh;
 }
 .bk-slider .swiper {
   width: 100%;
@@ -1490,7 +1502,20 @@ header.style-1.header-transparent {
     padding: 0 !important;
   }
   .bk-slider {
-    padding: 0 0 120px !important;
+    top: 20vh;
+  }
+  .bk-slider .swiper {
+    height: 20vh;
+  }
+  .bk-slider .banner-img-overlay{
+    min-height: 0;
+    padding: 0;
+  }
+  .bk-slider .banner-img-overlay h2{
+    padding: 0;
+  }
+  .bk-slider .swiper-slide.swiper-slide-active img {
+    height: fit-content;
   }
   .horo-style-1 .water-mark {
     position: absolute;
@@ -1498,8 +1523,11 @@ header.style-1.header-transparent {
     bottom: -20px;
     z-index: 2;
   }
+  .horo-style-1 .water-mark h2 {
+    font-size: 15vw;
+  }
 }
-@media (min-width: 576px ) and (max-width: 767px) {
+@media (min-width: 577px ) and (max-width: 767px) {
   .horo-style-1 {
     padding: 0 !important;
   }
@@ -1508,6 +1536,9 @@ header.style-1.header-transparent {
     right: 10px;
     bottom: -26px;
     z-index: 2;
+  }
+  .bk-slider {
+    padding: 130px 0 130px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1565,9 +1596,6 @@ header.style-1.header-transparent {
   }
   .horo-style-1 .banner-slider .swiper-pagination-bullet-active {
     font-size: 24px;
-  }
-  .bk-slider {
-    padding: 70px 0 130px;
   }
 }
 @media (max-width: 576px) {
@@ -2289,7 +2317,7 @@ h2 {
 
 .video-preview .play-icon {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40px;
@@ -2888,7 +2916,7 @@ footer.style1 .footer-btm.style-agency p a {
   /* Handle on hover */
 }
 .main-nav-wrapper .main-nav::before {
-  content: "Explore Pages.";
+  content: "Nani Clicks.";
   position: absolute;
   top: 25%;
   right: 5%;
@@ -2951,7 +2979,6 @@ footer.style1 .footer-btm.style-agency p a {
   top: 35px;
   opacity: 1;
   cursor: pointer;
-  border: 1px solid var(--white);
   padding: 5px;
   border-radius: 50%;
   width: 40px;

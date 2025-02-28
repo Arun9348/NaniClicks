@@ -369,7 +369,7 @@ var swiper = new Swiper('.personal-center-banner', {
 	loop: true,
 	speed: 1000,
 	spaceBetween: 30,
-	autoplay: true,
+	// autoplay: true,
 	mousewheel: {
 		enabled: true,
 		sensitivity: 5.5,
