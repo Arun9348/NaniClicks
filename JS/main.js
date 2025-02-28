@@ -51,12 +51,6 @@
 		jQuery(this).parent().siblings().children('.active').removeClass('active');
 	});
 
-	// parallax
-	var image = document.getElementsByClassName('parralax-image');
-	new simpleParallax(image, {
-		orientation: 'right',
-	delay: 0.4
-	});
 	// niceSelect
 	$('select').niceSelect();
 
@@ -120,38 +114,186 @@
 		// options
 		itemSelector: '.grid-item',
 	  });
-	// Progress bar
-	document.addEventListener("DOMContentLoaded", function (event) {
-		let offset = 50;
-		let circleContainer = document.querySelector(".circle-container");
-		let circlePath = document.querySelector('.circle-container path');
-		let pathLength = circlePath.getTotalLength();
-		circlePath.style.transition = circlePath.style.WebkitTransition = 'none';
-		circlePath.style.strokeDasharray = pathLength;
-		circlePath.style.strokeDashoffset = pathLength;
-		circlePath.getBoundingClientRect();
-		circlePath.style.transition = circlePath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-		let updateLoader = () => {
-			let scrollTop = window.scrollY;
-			let docHeight = document.body.offsetHeight;
-			let winHeight = window.innerHeight;
-			let height = docHeight - winHeight;
-			let progress = pathLength - (scrollTop * pathLength / height);
-			circlePath.style.strokeDashoffset = progress;
-			if (scrollTop > offset) {
-				circleContainer.classList.add("active");
-			} else {
-				circleContainer.classList.remove("active");
-			}
+	// video gallery
+	const videos = [
+		{
+			id: 1,
+			title: "Auspicious Event",
+			description: "Auspicious Pooja with Family and Friends",
+			thumbnail: '../images/banner/personal1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wFPPCvFcR-8?si=31igyUnXZWkKIIHH?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+		},
+		{
+			id: 2,
+			title: "Birthday Blinks",
+			description: "Birthday Celebration with Family and Friends",
+			thumbnail: '../images/banner/birthday.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 3,
+			title: "Children Memories",
+			description: "Childhood Memories with Family and Friends",
+			thumbnail: '../images/bg/services/children/children1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 4,
+			title: "Jingle Bell Shots",
+			description: "Christmas Celebration",
+			thumbnail: '../images/bg/services/christmas/christmas1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hT_nvWreIhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 5,
+			title: "Concert Night",
+			description: "Concert Night with Family and Friends",
+			thumbnail: '../images/bg/services/concert/concert1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 6,
+			title: "Graduation Day",
+			description: "Graduation Day with Family and Friends",
+			thumbnail: '../images/bg/services/graduation/graduation1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 7,
+			title: "Half Saree Ceremony",
+			description: "Half Saree Ceremony with Family and Friends",
+			thumbnail: '../images/bg/services/half-saree/half-saree1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 8,
+			title: "House Warming Ceremony",
+			description: "House Warming Ceremony with Family and Friends",
+			thumbnail: '../images/bg/services/house-warming/house-warming1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 9,
+			title: "Maternity Shoot",
+			description: "Maternity Shoot with Family and Friends",
+			thumbnail: '../images/bg/services/maternity/maternity1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 10,
+			title: "Potraits Photography",
+			description: "Potraits Photography with Family and Friends",
+			thumbnail: '../images/bg/services/potraits/potraits1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 11,
+			title: "Sports shots",
+			description: "Sports shots fun and joy",
+			thumbnail: '../images/bg/services/sports/sports1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		},
+		{
+			id: 12,
+			title: "Wedding Shots",
+			description: "Wedding Shots with Family and Friends",
+			thumbnail: '../images/bg/services/wedding/wedding1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 		}
-		circleContainer.onclick = function () {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
+	];
+
+	// Initialize gallery and load the first video by default
+	function initGallery() {
+		const previewsContainer = document.getElementById('videoPreviews');
+		const mainVideoContainer = document.getElementById('mainVideo');
+		const videoInfoContainer = document.getElementById('videoInfo');
+		
+		// Populate video previews
+		videos.forEach((video, index) => {
+			const previewElement = document.createElement('div');
+			previewElement.className = `video-preview ${index === 0 ? 'active' : ''}`;
+			previewElement.innerHTML = `
+				<img src="${video.thumbnail}" alt="${video.title}">
+				<div class="play-icon">▶</div>
+				<div class="title">${video.title}</div>
+			`;
+			
+			previewElement.addEventListener('click', () => {
+				// Update active class
+				document.querySelector('.video-preview.active')?.classList.remove('active');
+				previewElement.classList.add('active');
+				
+				// Load the selected video
+				loadVideo(video);
+			});
+			
+			previewsContainer.appendChild(previewElement);
+		});
+		
+		// Load the default (first) video
+		loadVideo(videos[0]);
+
+		// Setup auto-scrolling
+		setupAutoScroll();
+	}
+
+	// Load a video into the main player
+	function loadVideo(video) {
+		const mainVideoContainer = document.getElementById('mainVideo');
+		const videoInfoContainer = document.getElementById('videoInfo');
+		
+		// Set iframe using the provided iframe code
+		mainVideoContainer.innerHTML = video.iframeCode;
+		
+		// Make iframe responsive
+		const iframe = mainVideoContainer.querySelector('iframe');
+		iframe.style.position = 'absolute';
+		iframe.style.top = '0';
+		iframe.style.left = '0';
+		iframe.style.width = '100%';
+		iframe.style.height = '100%';
+		
+		// Update video info
+		videoInfoContainer.innerHTML = `
+			<h2>${video.title}</h2>
+			<p>${video.description}</p>
+		`;
+	}
+
+	// Setup auto-scrolling for previews
+	function setupAutoScroll() {
+		const previewsContainer = document.getElementById('videoPreviews');
+		let isHovering = false;
+		let autoScrollInterval;
+		
+		previewsContainer.addEventListener('mouseenter', () => {
+			isHovering = true;
+			clearInterval(autoScrollInterval);
+		});
+		
+		previewsContainer.addEventListener('mouseleave', () => {
+			isHovering = false;
+			startAutoScroll();
+		});
+		
+		function startAutoScroll() {
+			autoScrollInterval = setInterval(() => {
+				if (!isHovering) {
+					if (previewsContainer.scrollLeft + previewsContainer.clientWidth >= previewsContainer.scrollWidth) {
+						// Reset to beginning when reaching the end
+						previewsContainer.scrollLeft = 0;
+					} else {
+						previewsContainer.scrollLeft += 1;
+					}
+				}
+			}, 30);
 		}
-		window.onscroll = () => {
-			updateLoader();
-		}
-		updateLoader();
-	});
+		
+		startAutoScroll();
+	}
+
+	// Initialize the gallery when DOM is loaded
+	document.addEventListener('DOMContentLoaded', initGallery);
 
 // Services slider
 var swiper = new Swiper(".services-slider", {
@@ -220,210 +362,6 @@ var swiper = new Swiper(".insta-feed-slider", {
 	}
 });
 
-// Home Three Banner Slider
-new Swiper('.hero3-slider', {
-	slidesPerView: 1,
-	speed: 1500,
-	loop: true,
-	spaceBetween: 10,
-	loop: true,
-	centeredSlides: true,
-	roundLengths: true,
-	parallax: true,
-	effect: 'fade',
-	pagination: {
-		el: ".banner-paginnation",
-		clickable: 'true',
-	  },
-	fadeEffect: {
-	  crossFade: true,
-	},
-  
-	autoplay: {
-	  delay: 4000
-	},
-  
-  });
-
-  // Our Partner
-// var swiper = new Swiper(".our-patner-slider", {
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	spaceBetween: 0,
-// 	slidesPerView: 5,
-// 	speed: 5000,
-// 	autoplay: {
-// 		delay: 2000,
-// 	},
-	
-// 	breakpoints: {
-// 		280: {
-// 			slidesPerView: 2,
-// 			navigation: false,
-// 		},
-// 		386: {
-// 			slidesPerView: 2,
-// 			navigation: false,
-// 		},
-// 		576: {
-// 			slidesPerView: 3,
-// 			navigation: false,
-// 		},
-// 		768: {
-// 			slidesPerView: 3,
-// 			navigation: false,
-// 		},
-// 		992: {
-// 			slidesPerView: 4
-// 		},
-// 		1200: {
-// 			slidesPerView: 5
-// 		},
-// 		1400: {
-// 			slidesPerView: 6
-// 		},
-// 	}
-// });
-// Our Partner
-// var swiper = new Swiper(".about-img-slider", {
-// 	slidesPerView: 1,
-// 	loop: true,
-// 	spaceBetween: 20,
-// 	slidesPerView: 1,
-// 	effect: 'fade',
-// 		fadeEffect: {
-// 			crossFade: true
-// 		},
-// 	speed: 3000,
-// 	autoplay: {
-// 		delay: 1500,
-// 	},
-// 	pagination: {
-// 		el: ".about-img-paginnation",
-// 		clickable: 'true',
-// 	  },
-// });
-
-// Testimonial Slider2
-var swiper = new Swiper(".testimonial-slider", {
-	slidesPerView: 1,
-	loop: true,
-	spaceBetween: 20,
-	slidesPerView: 1,
-	speed: 3000,
-	autoplay: {
-		delay: 2000,
-	},
-	pagination: {
-		el: ".testimonial-paginnation",
-		clickable: 'true',
-	  },
-});
-
-
-// blog DT Slider
-	var swiper = new Swiper(".blog-dt-img-slider", {
-		loop: true,
-		speed: 2000,
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		},
-		autoplay: {
-			delay: 1500,
-		},
-		navigation: {
-			nextEl: ".swiper-button-next-m",
-			prevEl: ".swiper-button-prev-m",
-		  },
-	});
-
-// Home One Banner Slider
-var swiper = new Swiper(".banner-slider1", {
-	spaceBetween: 20,
-	loop: true,
-	slidesPerView: 2,
-	speed: 2000,
-		autoplay: {
-			delay: 1500,
-		},
-	keyboard: {
-	  enabled: true
-	},
-	pagination: {
-	  el: ".swiper-pagination-h",
-	  clickable: true,
-	  renderBullet: function(index, className) {
-		return '<span class="' + className + '">'+0 + (index + 1) + "</span>";
-	  }
-	},
-  });
-
-//   center-banner-slider
-  var mySwiper = new Swiper ('.banner-center-slider', {
-    loop: true,
-    speed: 1000,
-	centeredSlides: true,
-    slidesPerView: 2,
-	// autoplay:true,
-    autoplay: {
-       delay: 3000,
-    },
-	breakpoints: {
-		280: {
-			slidesPerView: 1,
-			navigation: false,
-		},
-		386: {
-			slidesPerView: 1,
-			navigation: false,
-		},
-		576: {
-			slidesPerView: 1,
-			navigation: false,
-		},
-		768: {
-			slidesPerView: 2,
-			navigation: false,
-		},
-	}
-})
-
-// banner-pagination-slider
-var mySwiper = new Swiper ('.banner-pagination-slider', {
-    loop: true,
-    speed: 1000,
-    slidesPerView: 1,
-	// autoplay:true,
-	effect: 'fade',
-	fadeEffect: {
-		crossFade: true,
-	},
-	pagination: {
-		el: ".swiper-pagination-num",
-		clickable: true,
-		renderBullet: function(index, className) {
-		  return '<span class="' + className + '">'+0 + (index + 1) + "</span>";
-		}
-	  },
-})
-
-// banner-fullscreen-slider
-var mySwiper = new Swiper ('.banner-fullscreen-slider', {
-    loop: true,
-    speed: 1000,
-    slidesPerView: 1,
-	// autoplay:true,
-	effect: 'fade',
-	navigation: {
-		nextEl: ".banner-full-prev1",
-		prevEl: ".banner-full-next1",
-	  },
-	fadeEffect: {
-		crossFade: true,
-	},
-})
-
 //   personal center mode slider
 var swiper = new Swiper('.personal-center-banner', {
 	slidesPerView: 3,
@@ -431,7 +369,7 @@ var swiper = new Swiper('.personal-center-banner', {
 	loop: true,
 	speed: 1000,
 	spaceBetween: 30,
-	// autoplay: true,
+	autoplay: true,
 	mousewheel: {
 		enabled: true,
 		sensitivity: 5.5,
