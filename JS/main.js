@@ -120,86 +120,86 @@
 			id: 1,
 			title: "Auspicious Event",
 			description: "Auspicious Pooja with Family and Friends",
-			thumbnail: '../images/banner/personal1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wFPPCvFcR-8?si=31igyUnXZWkKIIHH?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			thumbnail: '../images/bg/services/auspicious/auspicious1.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SIwnAOVu3dw?si=B5VDwmbJRwL9BB2E?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 2,
 			title: "Birthday Blinks",
 			description: "Birthday Celebration with Family and Friends",
 			thumbnail: '../images/banner/birthday.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/K5g75dTd1fA?si=StCWIw6qHipMrn-w?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 3,
-			title: "Children Memories",
-			description: "Childhood Memories with Family and Friends",
-			thumbnail: '../images/bg/services/children/children1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		},
-		{
-			id: 4,
 			title: "Jingle Bell Shots",
 			description: "Christmas Celebration",
 			thumbnail: '../images/bg/services/christmas/christmas1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hT_nvWreIhg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lG5RXmqLc5w?si=I19PF8T3WCGHSNOm?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
-			id: 5,
-			title: "Concert Night",
-			description: "Concert Night with Family and Friends",
-			thumbnail: '../images/bg/services/concert/concert1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		},
-		{
-			id: 6,
-			title: "Graduation Day",
-			description: "Graduation Day with Family and Friends",
-			thumbnail: '../images/bg/services/graduation/graduation1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		},
-		{
-			id: 7,
+			id: 4,
 			title: "Half Saree Ceremony",
 			description: "Half Saree Ceremony with Family and Friends",
 			thumbnail: '../images/bg/services/half-saree/half-saree1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hBv12g_x7CA?si=V9W0XCpZsz0zRgaF?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
-			id: 8,
+			id: 5,
 			title: "House Warming Ceremony",
 			description: "House Warming Ceremony with Family and Friends",
 			thumbnail: '../images/bg/services/house-warming/house-warming1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/rDONOC2IE-A?si=ZKmF5mGs60_WrrIP?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
-			id: 9,
-			title: "Maternity Shoot",
-			description: "Maternity Shoot with Family and Friends",
-			thumbnail: '../images/bg/services/maternity/maternity1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		},
-		{
-			id: 10,
-			title: "Potraits Photography",
-			description: "Potraits Photography with Family and Friends",
-			thumbnail: '../images/bg/services/potraits/potraits1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		},
-		{
-			id: 11,
+			id: 6,
 			title: "Sports shots",
 			description: "Sports shots fun and joy",
 			thumbnail: '../images/bg/services/sports/sports1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9zcIVFWHRik?si=x_EgJ4nH26aRDoYk?autoplay?1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
-		{
-			id: 12,
-			title: "Wedding Shots",
-			description: "Wedding Shots with Family and Friends",
-			thumbnail: '../images/bg/services/wedding/wedding1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		}
+		// {
+			// id: 7,
+			// title: "Children Memories",
+			// description: "Childhood Memories with Family and Friends",
+			// thumbnail: '../images/bg/services/children/children1.webp',
+			// iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// },
+		// {
+		// 	id: 8,
+		// 	title: "Concert Night",
+		// 	description: "Concert Night with Family and Friends",
+		// 	thumbnail: '../images/bg/services/concert/concert1.webp',
+		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// },
+		// {
+		// 	id: 9,
+		// 	title: "Graduation Day",
+		// 	description: "Graduation Day with Family and Friends",
+		// 	thumbnail: '../images/bg/services/graduation/graduation1.webp',
+		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// },
+		// {
+		// 	id: 10,
+		// 	title: "Maternity Shoot",
+		// 	description: "Maternity Shoot with Family and Friends",
+		// 	thumbnail: '../images/bg/services/maternity/maternity1.webp',
+		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// },
+		// {
+		// 	id: 11,
+		// 	title: "Potraits Photography",
+		// 	description: "Potraits Photography with Family and Friends",
+		// 	thumbnail: '../images/bg/services/potraits/potraits1.webp',
+		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// },
+		// {
+		// 	id: 12,
+		// 	title: "Wedding Shots",
+		// 	description: "Wedding Shots with Family and Friends",
+		// 	thumbnail: '../images/bg/services/wedding/wedding1.webp',
+		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+		// }
 	];
 
 	// Initialize gallery and load the first video by default
