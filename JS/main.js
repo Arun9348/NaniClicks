@@ -118,60 +118,60 @@
 	const videos = [
 		{
 			id: 1,
-			title: "Auspicious Event",
-			description: "Auspicious Pooja with Family and Friends",
-			thumbnail: '../images/bg/services/auspicious/auspicious1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SIwnAOVu3dw?si=B5VDwmbJRwL9BB2E?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			title: "House Warming Ceremony",
+			description: "It's a chance for friends and family to come over, see your new home, and fill it with good vibes, food and wine.",
+			thumbnail: '../images/bg/youtube/houseWarming.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ztYQ2fXVCSE?si=qLm0-GFE1a9OvtQz?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 2,
-			title: "Birthday Blinks",
-			description: "Birthday Celebration with Family and Friends",
-			thumbnail: '../images/banner/birthday.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/K5g75dTd1fA?si=StCWIw6qHipMrn-w?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			title: "Half Saree Ceremony",
+			description: "This ceremony marks a young girl's transition from childhood to womanhood and is celebrated when the girl reaches puberty, symbolizing her coming of age.",
+			thumbnail: '../images/bg/youtube/halfSaree.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hBv12g_x7CA?si=Gm2yoXD4xPcE_Y77?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 3,
-			title: "Jingle Bell Shots",
-			description: "Christmas Celebration",
-			thumbnail: '../images/bg/services/christmas/christmas1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lG5RXmqLc5w?si=I19PF8T3WCGHSNOm?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			title: "Birthday Celebration",
+			description: "",
+			thumbnail: '../images/bg/youtube/birthdayCelebration.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/R4EGcxhftJo?si=HYmQbUCjus8k1p0y?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 4,
-			title: "Half Saree Ceremony",
-			description: "Half Saree Ceremony with Family and Friends",
-			thumbnail: '../images/bg/services/half-saree/half-saree1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hBv12g_x7CA?si=V9W0XCpZsz0zRgaF?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			title: "Temple Construction Inauguration",
+			description: "Temples are a symbol of peace and belief for Hindus. The temple's main deity is the sculpture of a God or Goddess. Indian temples are known for their intricate sculptures, carvings and ancient paintings. These temples are open to the public and visitors who come to worship and make offerings.",
+			thumbnail: '../images/bg/youtube/templeConstruction.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SIwnAOVu3dw?si=7OUHu-8q7P53wSXf?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 5,
-			title: "House Warming Ceremony",
-			description: "House Warming Ceremony with Family and Friends",
-			thumbnail: '../images/bg/services/house-warming/house-warming1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/rDONOC2IE-A?si=ZKmF5mGs60_WrrIP?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			title: "Sports shots",
+			description: "Sports shots fun and joy",
+			thumbnail: '../images/bg/youtube/sportsShots.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-c9R7zhJGk?si=nGuHM7DEF0XDFKx7?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 6,
-			title: "Sports shots",
+			title: "Pre Birthday Shoot",
 			description: "Sports shots fun and joy",
-			thumbnail: '../images/bg/services/sports/sports1.webp',
-			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9zcIVFWHRik?si=x_EgJ4nH26aRDoYk?autoplay?1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+			thumbnail: '../images/bg/youtube/preBirthday.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/O7GWCHT607Q?si=WGgq1LOB6fa_89Pt?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
-		// {
-			// id: 7,
-			// title: "Children Memories",
-			// description: "Childhood Memories with Family and Friends",
-			// thumbnail: '../images/bg/services/children/children1.webp',
-			// iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// },
-		// {
-		// 	id: 8,
-		// 	title: "Concert Night",
-		// 	description: "Concert Night with Family and Friends",
-		// 	thumbnail: '../images/bg/services/concert/concert1.webp',
-		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// },
+		{
+			id: 7,
+			title: "House Warming Ceremony",
+			description: "Childhood Memories with Family and Friends",
+			thumbnail: '../images/bg/youtube/houseWarming2.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wvKVOdaAUWk?si=nJcNALt81E-cjBkt?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+		},
+		{
+			id: 8,
+			title: "Family Shoot",
+			description: "Concert Night with Family and Friends",
+			thumbnail: '../images/bg/youtube/familyShoot.webp',
+			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Oah55jyWm7A?si=5OEsOuvzqcyN76KU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+		},
 		// {
 		// 	id: 9,
 		// 	title: "Graduation Day",
@@ -298,6 +298,8 @@
 // Services slider
 var swiper = new Swiper(".services-slider", {
 	loop: true,
+	slidesPerView: 1,
+    loopAdditionalSlides: 0,
 	effect: 'fade',
 	fadeEffect: {
 		crossFade: true
@@ -315,7 +317,7 @@ var swiper = new Swiper(".services-slider", {
 // insta-feed-slider
 var swiper = new Swiper(".insta-feed-slider", {
 	slidesPerView: 1,
-	// speed: 800,
+	speed: 800,
 	loop: true,
 	freeMode: true,
 	spaceBetween: 10,
@@ -410,31 +412,6 @@ var swiper = new Swiper('.personal-center-banner', {
   });
 
   // -----------theme night and dark mood------------
-
-const dayNight = document.querySelector(".tt-style-switch");
-
-dayNight.addEventListener("click", () => {
-  dayNight.querySelector("i").classList.toggle("bi-brightness-low-fill")
-    dayNight.querySelector("i").classList.toggle("bi-moon");
-    document.body.classList.toggle("dark");
-
-	var value = document.getElementById("body").className;
-	var str = value;
-	var last = str.split(' ').slice(-1)[0];
-	if(  last === 'dark' ) {
-		localStorage.setItem("xoon_theme", last);
-	}else {
-		localStorage.setItem("xoon_theme", '');
-	}
-	window.addEventListener("load", () => {
-		if (document.body.classList.contains("dark")) {
-			jQuery('.tt-style-switch i').addClass('bi bi-brightness-low-fill');
-		} else {
-			jQuery('.tt-style-switch i').addClass('bi bi-moon');
-		}
-	})
-})
-
 var xoon_theme = localStorage.getItem('xoon_theme');
 
 if( xoon_theme === 'dark' ) {

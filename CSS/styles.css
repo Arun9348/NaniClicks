@@ -709,65 +709,6 @@ i.bx {
   justify-content: center;
   align-items: center;
 }
-
-/* ------------------------------------------------------------- *
- * Template style switch button
-/* ------------------------------------------------------------- */
-.tt-style-switch {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 30%;
-  right: 0;
-  width: 40px;
-  height: 35px;
-  background-color: #444;
-  font-size: 16px;
-  color: #FFF !important;
-  cursor: pointer;
-  z-index: 999;
-  border-radius: 50px 0 0 50px;
-  transition: all 0.2s;
-}
-.tt-style-switch .bi {
-  color: #fff;
-  z-index: 9999;
-}
-
-@media (max-width: 540px) {
-  .tt-style-switch {
-    top: auto;
-    bottom: 100px;
-  }
-}
-body:not(.is-mobile) .tt-style-switch:hover {
-  width: 45px;
-  background-color: red;
-  color: #FFF;
-}
-
-.tt-stsw-dark,
-.tt-stsw-light {
-  line-height: 0;
-}
-
-.tt-style-switch:not(.is-dark) .tt-stsw-dark {
-  display: none;
-}
-
-.tt-style-switch.is-dark .tt-stsw-light {
-  display: none;
-}
-
-/* If the sliding sidebar is on the right side */
-@media (min-width: 769px) {
-  body.tt-sliding-sidebar-right-on .tt-style-switch {
-    right: auto;
-    left: 0;
-    border-radius: 0 50px 50px 0;
-  }
-}
 /*=======================================
  3. preloader start
 =======================================*/
@@ -2455,6 +2396,9 @@ h2 {
   line-height: 30px;
   color: var(--text-light-dark-color1);
   margin-bottom: 15px;
+}
+.testimonial-area .testimonial-wrrap .author-area .author-img img{
+  border-radius: 50%;
 }
 .testimonial-area .swiper-pagination-bullet {
   width: 10px;
