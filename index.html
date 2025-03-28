@@ -22,6 +22,8 @@
         integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- FlatPickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
@@ -964,39 +966,42 @@
                                         </div>
                                     </div>
                                 </div>
-                                <form>
+                                <form action="https://formsubmit.co/contact@naniclicks.com" method="POST">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-inner">
                                                 <label>Your Name (required)</label>
-                                                <input type="text" required>
+                                                <input type="text" name="name" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-inner">
                                                 <label>Your Phone (required)</label>
-                                                <input type="number" required>
+                                                <input type="number" name="phoneNumber" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-inner">
                                                 <label>Your E-mail (required)</label>
-                                                <input type="email" required>
+                                                <input type="email" name="email" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-inner date">
                                                 <label>Booking Date</label>
-                                                <input autocomplete="off" placeholder="" type="text" name="checkIn"
-                                                    id="datepicker" class="calender">
+                                                <input autocomplete="off" placeholder="Select Booking Date" type="text" name="checkIn" id="datepicker" class="calender">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-inner">
-                                                <label>Type Your Message</label>
-                                                <textarea></textarea>
+                                                <label>Type Your Message (required)</label>
+                                                <textarea name="message" required></textarea>
                                             </div>
                                         </div>
+                                        <input type="hidden" name="_next" value="https://naniclicks.com/thankyou.html">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_cc" value="Clicksbynani9@gmail.com">
+                                        <input type="hidden" name="_template" value="table">
                                         <div class="col-md-12 d-flex justify-content-center pt-20">
                                             <div class="form-inner send-btn">
                                                 <button class="primary-btn3 button-hover-two" type="submit">Send
@@ -1124,6 +1129,17 @@
     <script src="JS/scrollToPlugin.js" defer></script>
     <script src="JS/sidebar.js" defer></script>
     <script src="JS/main.js" defer></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        flatpickr("#datepicker", {
+        minDate: "today", // Start from today
+        maxDate: new Date().fp_incr(365), // For 6 months (use 365 for 1 year)
+        dateFormat: "Y-m-d", // Format the date as Year-Month-Day
+        });
+    });
+    </script>
 </body>
 <!-- Mirrored from demo-egenslab.b-cdn.net/html/xoon/preview/index-personal-showcase.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Dec 2024 12:33:13 GMT -->
 

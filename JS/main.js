@@ -40,10 +40,10 @@
 		}
 	});
 
-	jQuery('#datepicker').datepicker({
-		format: 'dd-mm-yyyy',
-		startDate: '+1d'
-	  });
+	// jQuery('#datepicker').datepicker({
+	// 	format: 'dd-mm-yyyy',
+	// 	startDate: '+1d'
+	//   });
 	// mobile-drop-down
 	jQuery('.dropdown-icon').on('click', function () {
 		jQuery(this).toggleClass('active').next('ul').slideToggle();
@@ -119,87 +119,59 @@
 		{
 			id: 1,
 			title: "House Warming Ceremony",
-			description: "It's a chance for friends and family to come over, see your new home, and fill it with good vibes, food and wine.",
+			description: "Celebrate the joy of moving into a new home with friends and family. This video captures the warmth, blessings, and happiness of a housewarming ceremony.",
 			thumbnail: '../images/bg/youtube/houseWarming.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/ztYQ2fXVCSE?si=qLm0-GFE1a9OvtQz?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 2,
 			title: "Half Saree Ceremony",
-			description: "This ceremony marks a young girl's transition from childhood to womanhood and is celebrated when the girl reaches puberty, symbolizing her coming of age.",
+			description: "A beautiful tradition marking a young girl's transition into womanhood. This video showcases the vibrant celebrations, rituals, and cultural significance of the Half Saree Ceremony.",
 			thumbnail: '../images/bg/youtube/halfSaree.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hBv12g_x7CA?si=Gm2yoXD4xPcE_Y77?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 3,
 			title: "Birthday Celebration",
-			description: "",
+			description: "A joyful gathering filled with laughter, cake, and cherished moments. This video captures the essence of a memorable birthday celebration.",
 			thumbnail: '../images/bg/youtube/birthdayCelebration.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/R4EGcxhftJo?si=HYmQbUCjus8k1p0y?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 4,
 			title: "Temple Construction Inauguration",
-			description: "Temples are a symbol of peace and belief for Hindus. The temple's main deity is the sculpture of a God or Goddess. Indian temples are known for their intricate sculptures, carvings and ancient paintings. These temples are open to the public and visitors who come to worship and make offerings.",
+			description: "Witness the spiritual and cultural significance of a temple's inauguration. This video highlights the rituals, prayers, and community involvement in this sacred event.",
 			thumbnail: '../images/bg/youtube/templeConstruction.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SIwnAOVu3dw?si=7OUHu-8q7P53wSXf?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 5,
 			title: "Sports shots",
-			description: "Sports shots fun and joy",
+			description: "Relive the excitement and energy of sports moments. This video captures the thrill, teamwork, and joy of sports activities.",
 			thumbnail: '../images/bg/youtube/sportsShots.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-c9R7zhJGk?si=nGuHM7DEF0XDFKx7?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 6,
 			title: "Pre Birthday Shoot",
-			description: "Sports shots fun and joy",
+			description: "A creative and fun-filled prelude to a birthday celebration. This video showcases candid moments and unique themes for a pre-birthday shoot.",
 			thumbnail: '../images/bg/youtube/preBirthday.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/O7GWCHT607Q?si=WGgq1LOB6fa_89Pt?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 7,
 			title: "House Warming Ceremony",
-			description: "Childhood Memories with Family and Friends",
+			description: "A heartfelt celebration of a new beginning. This video captures the blessings, rituals, and happiness of a housewarming ceremony.",
 			thumbnail: '../images/bg/youtube/houseWarming2.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/wvKVOdaAUWk?si=nJcNALt81E-cjBkt?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
 		{
 			id: 8,
 			title: "Family Shoot",
-			description: "Concert Night with Family and Friends",
+			description: "Cherish the love and togetherness of family moments. This video highlights the joy and warmth of a family photoshoot.",
 			thumbnail: '../images/bg/youtube/familyShoot.webp',
 			iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Oah55jyWm7A?si=5OEsOuvzqcyN76KU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 		},
-		// {
-		// 	id: 9,
-		// 	title: "Graduation Day",
-		// 	description: "Graduation Day with Family and Friends",
-		// 	thumbnail: '../images/bg/services/graduation/graduation1.webp',
-		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// },
-		// {
-		// 	id: 10,
-		// 	title: "Maternity Shoot",
-		// 	description: "Maternity Shoot with Family and Friends",
-		// 	thumbnail: '../images/bg/services/maternity/maternity1.webp',
-		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// },
-		// {
-		// 	id: 11,
-		// 	title: "Potraits Photography",
-		// 	description: "Potraits Photography with Family and Friends",
-		// 	thumbnail: '../images/bg/services/potraits/potraits1.webp',
-		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// },
-		// {
-		// 	id: 12,
-		// 	title: "Wedding Shots",
-		// 	description: "Wedding Shots with Family and Friends",
-		// 	thumbnail: '../images/bg/services/wedding/wedding1.webp',
-		// 	iframeCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-		// }
 	];
 
 	// Initialize gallery and load the first video by default
