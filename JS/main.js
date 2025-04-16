@@ -267,6 +267,7 @@
 		const previewsContainer = document.getElementById('videoPreviews');
 		let isHovering = false;
 		let autoScrollInterval;
+		let isResetting = false;
 		
 		previewsContainer.addEventListener('mouseenter', () => {
 			isHovering = true;
@@ -280,10 +281,18 @@
 		
 		function startAutoScroll() {
 			autoScrollInterval = setInterval(() => {
-				if (!isHovering) {
-					if (previewsContainer.scrollLeft + previewsContainer.clientWidth >= previewsContainer.scrollWidth) {
-						// Reset to beginning when reaching the end
-						previewsContainer.scrollLeft = 0;
+				if (!isHovering && !isResetting) {
+					if (previewsContainer.scrollLeft + previewsContainer.clientWidth >= previewsContainer.scrollWidth - 1) {
+						// Immediate reset to beginning
+						isResetting = true;
+						previewsContainer.scrollTo({
+							left: 0,
+							behavior: 'smooth'
+						});
+						// Reset the isResetting flag after animation completes
+						setTimeout(() => {
+							isResetting = false;
+						}, 500); // Match this with scroll animation duration
 					} else {
 						previewsContainer.scrollLeft += 1;
 					}
